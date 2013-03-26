@@ -1,0 +1,4 @@
+# chrome.manifest for development
+content phpunitwdformatter  chrome/content/
+
+overlay chrome://selenium-ide/content/selenium-ide-overlay.xul chrome://phpunitwdformatter/content/formats/format-loader.xul
