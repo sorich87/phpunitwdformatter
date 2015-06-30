@@ -324,9 +324,9 @@ WDAPI.Element.prototype.select = function(selectLocator) {
     return options.receiver + "->select(" + this.ref + ")->criteria('xpath')->value('.//option[" + selectLocator.string + "]')";
   }
   if (selectLocator.type == 'value') {
-    return options.receiver + "->select(" + this.ref + ").selectOptionByValue(" + xlateArgument(selectLocator.string) + ")";
+    return options.receiver + "->select(" + this.ref + ")->selectOptionByValue(" + xlateArgument(selectLocator.string) + ")";
   }
-  return options.receiver + "->select(" + this.ref + ").selectOptionByLabel(" + xlateArgument(selectLocator.string) + ")";
+  return options.receiver + "->select(" + this.ref + ")->selectOptionByLabel(" + xlateArgument(selectLocator.string) + ")";
 };
 
 WDAPI.ElementList = function(ref) {
